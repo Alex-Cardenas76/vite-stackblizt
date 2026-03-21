@@ -4,7 +4,7 @@ import {Home} from './pages/Home.jsx'
 function App() {
   return( 
   <>
-     <div>Restauranteee</div>
+     <div>Restauranteee8</div>
      <Home/>
   </>
   )
