@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 export function MesaCard({ numero, capacidad, estado, comensales }) {
     return (
         <div>
@@ -13,8 +15,8 @@ export function MesaCard({ numero, capacidad, estado, comensales }) {
 // ¿Cómo sabes desde afuera qué valores acepta? 
 // ¿Para qué sirve PropTypes en este caso? Agréguenlo al componente.
 MesaCard.propTypes = {
-    numero: propTypes.number.isRequired,
-    capacidad: propTypes.number.isRequired,
-    estado: propTypes.oneOf(["libre", "ocupada", "reservada"]).isRequired,
-    comensales: propTypes.number.isRequired
+    numero: PropTypes.number.isRequired,
+    capacidad: PropTypes.number.isRequired,
+    estado: PropTypes.oneOf(["libre", "ocupada", "reservada"]).isRequired,
+    comensales: PropTypes.number.isRequired
 }
