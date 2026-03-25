@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>Restaurante</div>
-      <NavBar />
+      <NavBar NombreRestaurante="Don Pollo" />
       <hr />
       <Home />
       <hr />

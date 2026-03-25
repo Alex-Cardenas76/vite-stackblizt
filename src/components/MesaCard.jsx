@@ -5,7 +5,8 @@ export function MesaCard({ numero, capacidad, estado, comensales }) {
         <div>
             <h2>Mesa {numero}</h2>
             <p>Capacidad: {capacidad}</p>
-            <p>Estado: {estado}</p>
+            <p style={{color: estado === "libre" ? "green" :
+                 estado === "ocupada" ? "red" : "orange"}}>Estado: {estado}</p>
             <p>Comensales: {comensales}</p>
         </div>
     )
